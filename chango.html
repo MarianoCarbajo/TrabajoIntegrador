@@ -15,14 +15,14 @@
   </head>
   <body>
     <!--Encabezado-->
-    <h1 id="titulo">Trabajo Integrador</h1>
+    <h1 id="titulo">TP Int s.a.</h1>
 
     <nav
       class="navbar-expand-lg navbar navbar-light"
       style="background-color: #fdd302;"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Front End</a>
+        <a class="navbar-brand" href="index.html">TP Int s.a.</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,6 +53,27 @@
     </nav>
     <!--Cuerpo de la página-->
 
+    <div class="contenedor-flex">
+      <div class="hijo uno">
+        <input type="text" id="producto" placeholder="Producto" />
+        <input type="number" id="precio" placeholder="Precio" />
+        <button id="btnAgregar">Agregar</button>
+        <button id="btnTotal">Total</button>
+        <button id="btnBorrar">Borrar</button>
+      </div>
+      <div class="hijo dos">
+        <h2>Lista de compras</h2>
+        <ul id="lista"></ul>
+      </div>
+      <div class="hijo tres">
+        <h2>SubTotal</h2>
+        <p id="subtotal"></p>
+        <p id="mensaje"></p>
+        <h2>Total</h2>
+        <p id="total"></p>
+      </div>
+    </div>
+
     <!--Enlaces-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -64,5 +85,6 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="src/index.ts"></script>
   </body>
 </html>
